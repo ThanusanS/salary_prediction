@@ -14,7 +14,7 @@ function predict() {
     .then((data) => {
       if (data.prediction) {
         document.getElementById("result").innerText =
-          "Predicted Salary: " + data.prediction;
+          "Predicted Salary:  Rs.  " + data.prediction;
       } else {
         document.getElementById("result").innerText =
           "Server Error: " + data.error;
